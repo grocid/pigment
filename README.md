@@ -11,8 +11,12 @@ Currently, the code only works in Pantheon terminal, but the colors can be extra
 
 ![](Vg3ve2E.jpg)
 
-we get the following set of colors
+we get the following set of colors:
 
-```
-#8b3860:#f7d188:#311331:#9ed8aa:#e0593f:#ab3031:#621d39:#e19f70#8b3860:#f7d188:#311331:#9ed8aa:#e0593f:#ab3031:#621d39:#e19f70
-```
+![](scrot1.png)
+
+Another example is as follows:
+
+![](scrot1.png)
+
+To tweak the colors, you can set `beta` and `gamma` to increase general brightness and decrease background brightness, respectively.
