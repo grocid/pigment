@@ -17,6 +17,6 @@ we get the following set of colors:
 
 Another example is as follows:
 
-![](scrot1.png)
+![](scrot2.png)
 
 To tweak the colors, you can set `beta` and `gamma` to increase general brightness and decrease background brightness, respectively.
