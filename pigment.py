@@ -23,12 +23,13 @@ def getcentroids(filename, n=8):
 
 def set_colors_gnome(centroids):
     centroids = sorted(centroids, key=lambda rgb: sum(c**2 for c in rgb))
+    prefix = 'gsettings set org.pantheon.terminal.settings '
     # Set background and foreground
-    os.system('gsettings set org.pantheon.terminal.settings background \"%s\"' % rgb2hex(darken(centroids[0])))
-    os.system('gsettings set org.pantheon.terminal.settings foreground \"%s\"' % rgb2hex(centroids[-1]))
+    os.system(prefix + 'background \"%s\"' % rgb2hex(darken(centroids[0])))
+    os.system(prefix + 'foreground \"%s\"' % rgb2hex(centroids[-1]))
     # Set ANSI colors
-    palette = 'gsettings set org.pantheon.terminal.settings palette \"'
-    colors = ':'.join(sorted(rgb2hex(centroid) for centroid in centroids[1:-1]))
+    palette = prefix + 'palette \"'
+    colors = ':'.join(rgb2hex(centroid) for centroid in centroids[1:-1])
     os.system(palette + colors + ':' + colors + '\"')
 
 def bar(mode):
