@@ -28,9 +28,8 @@ def set_colors_gnome(centroids):
     os.system(prefix + 'background \"%s\"' % rgb2hex(darken(centroids[0])))
     os.system(prefix + 'foreground \"%s\"' % rgb2hex(centroids[-1]))
     # Set ANSI colors
-    palette = prefix + 'palette \"'
     colors = ':'.join(rgb2hex(centroid) for centroid in centroids[1:-1])
-    os.system(palette + colors + ':' + colors + '\"')
+    os.system(prefix + 'palette \"' + colors + ':' + colors + '\"')
 
 def bar(mode):
     write = sys.stdout.write
