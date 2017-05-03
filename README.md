@@ -1,6 +1,6 @@
 # Pigment
 
-This is simple tool which uses the K-means++ algorithm to pick suitable terminal colors from a given image. The algorithm is an approximation for solving clustering/paritioning problems, which in this particular case means finding `N = 8` dominant colors in the image.
+This is simple tool which uses the K-means++ algorithm to pick suitable terminal colors from a given image. The algorithm is an approximation for solving clustering/paritioning problems, which in this particular case means finding `N = 8` dominant colors in the image. Obviously, it does not work well on pictures with short spectrum.
 
 To set colors in Pantheon terminal (Elementary OS), simply invoke the following
 ```
