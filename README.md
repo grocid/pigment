@@ -9,7 +9,7 @@ To set colors in Pantheon terminal (Elementary OS), simply invoke the following
 
 Currently, the code only works in Pantheon terminal, but the colors can be extracted and manually inserted into your favorite terminal's settings. Running the script for the image below...
 
-![A wallpaper image][Vg3ve2E.jpg]
+![Vg3ve2E.jpg]
 
 we get the following set of colors
 
